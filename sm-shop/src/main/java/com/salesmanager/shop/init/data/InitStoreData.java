@@ -233,7 +233,7 @@ public class InitStoreData implements InitData {
 			CategoryDescription techEnglishDescription2 = new CategoryDescription();
 		    techEnglishDescription2.setName("Intradérmicas");
 		    techEnglishDescription2.setCategory(tech);
-		    techEnglishDescription2.setLanguage(en);
+		    techEnglishDescription2.setLanguage(es);
 		    techEnglishDescription2.setSeUrl("intredermicas");
 			
 		    CategoryDescription techFrenchDescription = new CategoryDescription();
@@ -268,7 +268,7 @@ public class InitStoreData implements InitData {
 		    CategoryDescription webEnglishDescription2 = new CategoryDescription();
 		    webEnglishDescription2.setName("Intravenosas");
 		    webEnglishDescription2.setCategory(web);
-		    webEnglishDescription2.setLanguage(en);
+		    webEnglishDescription2.setLanguage(es);
 		    webEnglishDescription2.setSeUrl("intravenosas");
 
 		    CategoryDescription webFrenchDescription = new CategoryDescription();
@@ -305,7 +305,7 @@ public class InitStoreData implements InitData {
 		    CategoryDescription fictionEnglishDescription2 = new CategoryDescription();
 		    fictionEnglishDescription2.setName("Soluciones Nasales");
 		    fictionEnglishDescription2.setCategory(fiction);
-		    fictionEnglishDescription2.setLanguage(en);
+		    fictionEnglishDescription2.setLanguage(es);
 		    fictionEnglishDescription2.setSeUrl("soluciones-nasales");
 			
 		    CategoryDescription fictionFrenchDescription = new CategoryDescription();
@@ -341,7 +341,7 @@ public class InitStoreData implements InitData {
 		    CategoryDescription businessEnglishDescription2 = new CategoryDescription();
 		    businessEnglishDescription2.setName("Antialérgicos");
 		    businessEnglishDescription2.setCategory(business);
-		    businessEnglishDescription2.setLanguage(en);
+		    businessEnglishDescription2.setLanguage(es);
 		    businessEnglishDescription2.setSeUrl("antialergicos");
 			
 		    CategoryDescription businessFrenchDescription = new CategoryDescription();
@@ -376,7 +376,7 @@ public class InitStoreData implements InitData {
 		    CategoryDescription cloudEnglishDescription2 = new CategoryDescription();
 		    cloudEnglishDescription2.setName("Antibióticos");
 		    cloudEnglishDescription2.setCategory(cloud);
-		    cloudEnglishDescription2.setLanguage(en);
+		    cloudEnglishDescription2.setLanguage(es);
 		    cloudEnglishDescription2.setSeUrl("antibioticos");
 			
 		    CategoryDescription cloudFrenchDescription = new CategoryDescription();
@@ -405,7 +405,7 @@ public class InitStoreData implements InitData {
 		    oreilley.setCode("abott");
 
 		    ManufacturerDescription oreilleyd = new ManufacturerDescription();
-		    oreilleyd.setLanguage(en);
+		    oreilleyd.setLanguage(es);
 		    oreilleyd.setName("Abott");
 		    oreilleyd.setManufacturer(oreilley);
 		    oreilley.getDescriptions().add(oreilleyd);
@@ -418,7 +418,7 @@ public class InitStoreData implements InitData {
 		    sams.setCode("pfizer");
 
 		    ManufacturerDescription samsd = new ManufacturerDescription();
-		    samsd.setLanguage(en);
+		    samsd.setLanguage(es);
 		    samsd.setName("Pfizer");
 		    samsd.setManufacturer(sams);
 		    sams.getDescriptions().add(samsd);
@@ -430,7 +430,7 @@ public class InitStoreData implements InitData {
 		    packt.setCode("genericos");
 
 		    ManufacturerDescription packtd = new ManufacturerDescription();
-		    packtd.setLanguage(en);
+		    packtd.setLanguage(es);
 		    packtd.setName("Genéricos");
 		    packtd.setManufacturer(packt);
 		    packt.getDescriptions().add(packtd);
@@ -442,7 +442,7 @@ public class InitStoreData implements InitData {
 		    manning.setCode("simi");
 
 		    ManufacturerDescription manningd = new ManufacturerDescription();
-		    manningd.setLanguage(en);
+		    manningd.setLanguage(es);
 		    manningd.setManufacturer(manning);
 		    manningd.setName("Simi");
 		    manning.getDescriptions().add(manningd);
@@ -454,7 +454,7 @@ public class InitStoreData implements InitData {
 		    novells.setCode("Bayer");
 
 		    ManufacturerDescription novellsd = new ManufacturerDescription();
-		    novellsd.setLanguage(en);
+		    novellsd.setLanguage(es);
 		    novellsd.setManufacturer(novells);
 		    novellsd.setName("Bayer");
 		    novells.getDescriptions().add(novellsd);
@@ -489,9 +489,9 @@ public class InitStoreData implements InitData {
 		    dprice.setProductAvailability(availability);
 
 		    ProductPriceDescription dpd = new ProductPriceDescription();
-		    dpd.setName("Base price");
+		    dpd.setName("Precio base");
 		    dpd.setProductPrice(dprice);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice.getDescriptions().add(dpd);
 		    
@@ -501,7 +501,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    ProductDescription description = new ProductDescription();
 		    description.setName("Mycinadol");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setSeUrl("mycinadol");
 		    description.setProduct(product);
 
@@ -537,7 +537,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    description = new ProductDescription();
 		    description.setName("Clirbest");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setProduct(product2);
 		    description.setSeUrl("clirbest");
 
@@ -559,9 +559,9 @@ public class InitStoreData implements InitData {
 		    dprice2.setProductAvailability(availability2);
 
 		    dpd = new ProductPriceDescription();
-		    dpd.setName("Base price");
+		    dpd.setName("Precio base");
 		    dpd.setProductPrice(dprice2);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice2.getDescriptions().add(dpd);
 		    
@@ -595,7 +595,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    description = new ProductDescription();
 		    description.setName("Arcabosa");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setProduct(product3);
 		    description.setSeUrl("arcabosa");
 
@@ -618,7 +618,7 @@ public class InitStoreData implements InitData {
 		    dpd = new ProductPriceDescription();
 		    dpd.setName("Base price");
 		    dpd.setProductPrice(dprice3);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice3.getDescriptions().add(dpd);
 		    
@@ -651,7 +651,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    description = new ProductDescription();
 		    description.setName("Acemetacina");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setProduct(product4);
 		    description.setSeUrl("acemetacina");
 
@@ -673,9 +673,9 @@ public class InitStoreData implements InitData {
 		    dprice4.setProductAvailability(availability4);
 
 		    dpd = new ProductPriceDescription();
-		    dpd.setName("Base price");
+		    dpd.setName("Precio base");
 		    dpd.setProductPrice(dprice4);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice4.getDescriptions().add(dpd);
 		    
@@ -708,7 +708,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    description = new ProductDescription();
 		    description.setName("Aciclovir");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setProduct(product5);
 		    description.setSeUrl("aciclovir");
 
@@ -732,9 +732,9 @@ public class InitStoreData implements InitData {
 		    dprice5.setProductAvailability(availability5);
 
 		    dpd = new ProductPriceDescription();
-		    dpd.setName("Base price");
+		    dpd.setName("Precio base");
 		    dpd.setProductPrice(dprice5);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice5.getDescriptions().add(dpd);
 
@@ -768,7 +768,7 @@ public class InitStoreData implements InitData {
 		    // Product description
 		    description = new ProductDescription();
 		    description.setName("Botiquin Dr. Simi");
-		    description.setLanguage(en);
+		    description.setLanguage(es);
 		    description.setProduct(product6);
 		    description.setSeUrl("botiquin");
 
@@ -791,9 +791,9 @@ public class InitStoreData implements InitData {
 		    dprice6.setProductAvailability(availability6);
 
 		    dpd = new ProductPriceDescription();
-		    dpd.setName("Base price");
+		    dpd.setName("Precio base");
 		    dpd.setProductPrice(dprice6);
-		    dpd.setLanguage(en);
+		    dpd.setLanguage(es);
 
 		    dprice6.getDescriptions().add(dpd);
 
@@ -860,7 +860,7 @@ public class InitStoreData implements InitData {
 			customer.setCompany("Araguacaima");
 			customer.setDateOfBirth(new Date());
 
-			customer.setDefaultLanguage(en);
+			customer.setDefaultLanguage(es);
 			customer.setNick("araguacaima");
 			
 			String password = passwordEncoder.encode("password");
