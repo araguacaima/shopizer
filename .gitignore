@@ -14,7 +14,7 @@
 /SALESMANAGER.h2.db/
 /SALESMANAGER.lock.db/
 */sm-shop/**
-
+*.log
 **/bin
 **/build
 **/.idea
