@@ -148,34 +148,34 @@ public class InitStoreData implements InitData {
 		Language es = languageService.getByCode("es");
 		Language fr = languageService.getByCode("fr");
 		
-		Country canada = countryService.getByCode("CA");
-		Zone zone = zoneService.getByCode("QC");
+		Country mexico = countryService.getByCode("MX");
+		Zone zone = zoneService.getByCode("CDMX");
 		
 		//create a merchant
 		MerchantStore store = merchantService.getMerchantStore(MerchantStore.DEFAULT_STORE);
 		ProductType generalType = productTypeService.getProductType(ProductType.GENERAL_TYPE);
 		
 		
-		 Category book = new Category();
-		    book.setMerchantStore(store);
-		    book.setCode("soluciones-opticas");
-		    book.setVisible(true);
+		 Category optical = new Category();
+		    optical.setMerchantStore(store);
+		    optical.setCode("soluciones-opticas");
+		    optical.setVisible(true);
 
 		    CategoryDescription bookEnglishDescription = new CategoryDescription();
 		    bookEnglishDescription.setName("Soluciones Ópticas");
-		    bookEnglishDescription.setCategory(book);
+		    bookEnglishDescription.setCategory(optical);
 		    bookEnglishDescription.setLanguage(en);
 		    bookEnglishDescription.setSeUrl("soluciones-opticas");
 			
 		    CategoryDescription bookEnglishDescription2 = new CategoryDescription();
 		    bookEnglishDescription2.setName("Soluciones Ópticas");
-		    bookEnglishDescription2.setCategory(book);
+		    bookEnglishDescription2.setCategory(optical);
 		    bookEnglishDescription2.setLanguage(es);
 		    bookEnglishDescription2.setSeUrl("soluciones-opticas");
 			
 		    CategoryDescription bookFrenchDescription = new CategoryDescription();
 		    bookFrenchDescription.setName("Livres d'informatique");
-		    bookFrenchDescription.setCategory(book);
+		    bookFrenchDescription.setCategory(optical);
 		    bookFrenchDescription.setLanguage(fr);
 		    bookFrenchDescription.setSeUrl("livres-informatiques");
 
@@ -184,9 +184,9 @@ public class InitStoreData implements InitData {
 		    descriptions.add(bookFrenchDescription);
 			descriptions.add(bookEnglishDescription2);
 
-		    book.setDescriptions(descriptions);
+		    optical.setDescriptions(descriptions);
 
-		    categoryService.create(book);
+		    categoryService.create(optical);
 
 		    Category novs = new Category();
 		    novs.setMerchantStore(store);
@@ -249,10 +249,10 @@ public class InitStoreData implements InitData {
 
 		    tech.setDescriptions(descriptions4);
 		    
-		    tech.setParent(book);
+		    tech.setParent(optical);
 
 		    categoryService.create(tech);
-		    categoryService.addChild(book, tech);
+		    categoryService.addChild(optical, tech);
 
 		    Category web = new Category();
 		    web.setMerchantStore(store);
@@ -284,10 +284,10 @@ public class InitStoreData implements InitData {
 
 		    web.setDescriptions(descriptions3);
 		    
-		    web.setParent(book);
+		    web.setParent(optical);
 
 		    categoryService.create(web);
-		    categoryService.addChild(book, web);
+		    categoryService.addChild(optical, web);
 
 
 
@@ -878,7 +878,7 @@ public class InitStoreData implements InitData {
 		    Delivery delivery = new Delivery();
 		    delivery.setAddress("Dirección falsa 123");
 		    delivery.setCity( "Ciudad de México" );
-		    delivery.setCountry(canada);
+		    delivery.setCountry(mexico);
 //		    delivery.setCountryCode(canada.getIsoCode());
 		    delivery.setFirstName("Alejandro Manuel" );
 		    delivery.setLastName("Méndez Araguacaima" );
@@ -889,7 +889,7 @@ public class InitStoreData implements InitData {
 		    billing.setAddress("Dirección falsa 123");
 		    billing.setCity("Ciudad de México");
 		    billing.setCompany("Araguacaima");
-		    billing.setCountry(canada);
+		    billing.setCountry(mexico);
 //		    billing.setCountryCode(canada.getIsoCode());
 		    billing.setFirstName("Alejandro Manuel" );
 		    billing.setLastName("Méndez Araguacaima" );

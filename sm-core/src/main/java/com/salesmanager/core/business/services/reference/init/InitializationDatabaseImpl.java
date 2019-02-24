@@ -142,6 +142,7 @@ public class InitializationDatabaseImpl implements InitializationDatabase {
 			Locale locale = SchemaConstant.LOCALES.get(code);
 			if (locale != null) {
 				Country country = new Country(code);
+				LOGGER.info("Populating " + country.getName());
 				countryService.create(country);
 				
 				for (Language language : languages) {
@@ -192,6 +193,7 @@ public class InitializationDatabaseImpl implements InitializationDatabase {
 		LOGGER.info(String.format("%s : Populating Languages ", name));
 		for(String code : SchemaConstant.LANGUAGE_ISO_CODE) {
 			Language language = new Language(code);
+			LOGGER.info("Populating " + language.getCode());
 			languageService.create(language);
 		}
 	}
@@ -201,28 +203,29 @@ public class InitializationDatabaseImpl implements InitializationDatabase {
 		
 		Date date = new Date(System.currentTimeMillis());
 		
-		Language en = languageService.getByCode("en");
-		Country ca = countryService.getByCode("CA");
-		Currency currency = currencyService.getByCode("CAD");
-		Zone qc = zoneService.getByCode("QC");
+		Language en = languageService.getByCode("es");
+		Country mx = countryService.getByCode("MX");
+		Currency currency = currencyService.getByCode("MXN");
+		Zone cdmx = zoneService.getByCode("CDMX");
 		
 		List<Language> supportedLanguages = new ArrayList<Language>();
 		supportedLanguages.add(en);
 		
 		//create a merchant
 		MerchantStore store = new MerchantStore();
-		store.setCountry(ca);
+
+		store.setCountry(mx);
 		store.setCurrency(currency);
 		store.setDefaultLanguage(en);
 		store.setInBusinessSince(date);
-		store.setZone(qc);
-		store.setStorename("Default store");
-		store.setStorephone("888-888-8888");
-		store.setCode(MerchantStore.DEFAULT_STORE);
-		store.setStorecity("My city");
-		store.setStoreaddress("1234 Street address");
-		store.setStorepostalcode("H2H-2H2");
-		store.setStoreEmailAddress("john@test.com");
+		store.setZone(cdmx);
+		store.setStorename("Simi-Online");
+		store.setStorephone("5513739197");
+		store.setCode("simionline");
+		store.setStorecity("Ciudad de México");
+		store.setStoreaddress("Dirección false 123");
+		store.setStorepostalcode("01180");
+		store.setStoreEmailAddress("araguacaima@gmail.com");
 		store.setDomainName("localhost:8080");
 		store.setStoreTemplate("generic");
 		store.setLanguages(supportedLanguages);
