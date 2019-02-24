@@ -514,11 +514,11 @@ public class InitStoreData implements InitData {
 		    productService.create(product);
 		    
 		    try {
-		    	ClassPathResource classPathResource = new ClassPathResource("/demo/mycinadol.png");
+		    	ClassPathResource classPathResource = new ClassPathResource("/demo/mycinadol.jpg");
 		    	InputStream inStream = classPathResource.getInputStream();
-		    	this.saveFile(inStream, "mycinadol.png", product);
+		    	this.saveFile(inStream, "mycinadol.jpg", product);
 		    } catch(Exception e) {
-		    	LOGGER.error("Error while reading demo file mycinadol.png",e);
+		    	LOGGER.error("Error while reading demo file mycinadol.jpg",e);
 		    }
 		    
 

@@ -199,6 +199,11 @@
 				<!-- Will provide build details to application -->
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<jvmArguments>
+                        -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005
+					</jvmArguments>
+				</configuration>
 				<executions>
 					<execution>
 						<id>build-info</id>

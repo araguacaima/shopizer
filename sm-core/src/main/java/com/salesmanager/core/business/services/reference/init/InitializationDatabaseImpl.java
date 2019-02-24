@@ -221,7 +221,7 @@ public class InitializationDatabaseImpl implements InitializationDatabase {
 		store.setZone(cdmx);
 		store.setStorename("Simi-Online");
 		store.setStorephone("5513739197");
-		store.setCode("simionline");
+		store.setCode(MerchantStore.DEFAULT_STORE);
 		store.setStorecity("Ciudad de México");
 		store.setStoreaddress("Dirección false 123");
 		store.setStorepostalcode("01180");
